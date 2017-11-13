@@ -1,4 +1,8 @@
 RailsStupidCoaching::Application.routes.draw do
+  get "answer", to: "questions#answer"
+
+  get "questions/ask"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

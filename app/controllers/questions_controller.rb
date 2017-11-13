@@ -1,7 +1,7 @@
 class QuestionsController < ApplicationController
 
   def answer
-    @query = params[:query]
+    @query = params[:question]
     @query ||= ""
     @answer = ""
     puts @query
@@ -14,6 +14,4 @@ class QuestionsController < ApplicationController
     end
   end
 
-  # def ask
-  # end
 end
